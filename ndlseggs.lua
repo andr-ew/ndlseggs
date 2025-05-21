@@ -83,7 +83,8 @@ arqueggiator = include 'lib/eggs/lib/arqueggiator/arqueggiator'      --arqueggia
 Arqueggiator = include 'lib/eggs/lib/arqueggiator/ui'
 
 patcher = include 'lib/eggs/lib/patcher/patcher'                     --modulation maxtrix
-Patcher = include 'lib/eggs/lib/patcher/ui/using_source_keys'        --mod matrix patching UI utilities
+-- Patcher = include 'lib/eggs/lib/patcher/ui/using_source_keys'        --mod matrix patching UI utilities
+Patcher = include 'lib/ndls/lib/patcher/ui'        --mod matrix patching UI utilities
 
 nb = include 'lib/eggs/lib/nb/lib/nb'                                --nb
 
@@ -273,6 +274,17 @@ function App.arc()
     }
 
     return function()
+        if crops.device == 'arc_key' and crops.mode == 'input' then
+            local _,z = table.unpack(crops.args)
+
+            if z == 1 then
+                script_focus = (script_focus == 'eggs') and 'ndls' or 'eggs'
+                crops.dirty.arc = true
+                crops.dirty.screen = true
+                crops.dirty.grid = true
+            end
+        end
+
         _ndls()
     end
 end
