@@ -1,0 +1,6 @@
+[submodule "lib/eggs"]
+	path = lib/eggs
+	url = https://github.com/andr-ew/eggs
+[submodule "lib/ndls"]
+	path = lib/ndls
+	url = https://github.com/andr-ew/ndls
