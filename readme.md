@@ -18,3 +18,11 @@
 -- github.com/andr-ew/ndls
 -- github.com/andr-ew/eggs
 ```
+
+## install
+
+in the maiden REPL, type:
+
+```
+;install https://github.com/andr-ew/ndlseggs/releases/download/latest/complete-source-code.zip
+```
