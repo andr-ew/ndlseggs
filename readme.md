@@ -1,6 +1,10 @@
 ```
 -- ndlseggs
 --
+-- IT TAKES A REALLY LONG TIME
+-- TO LOAD. JUST.... WAIT
+-- I GUESS
+--
 -- ndls + eggs
 --
 -- use arc key to switch scripts
