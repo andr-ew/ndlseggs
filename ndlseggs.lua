@@ -1,5 +1,9 @@
 -- ndlseggs
 --
+-- IT TAKES A REALLY LONG TIME 
+-- TO LOAD. JUST.... WAIT
+-- I GUESS
+--
 -- ndls + eggs
 --
 -- use arc key to switch scripts
@@ -84,7 +88,8 @@ Arqueggiator = include 'lib/eggs/lib/arqueggiator/ui'
 
 patcher = include 'lib/eggs/lib/patcher/patcher'                     --modulation maxtrix
 -- Patcher = include 'lib/eggs/lib/patcher/ui/using_source_keys'        --mod matrix patching UI utilities
-Patcher = include 'lib/ndls/lib/patcher/ui'        --mod matrix patching UI utilities
+Patcher = include 'lib/ndls/lib/patcher/ui'           --mod matrix patching UI utilities
+Map_patcher = include 'lib/eggs/lib/patcher/ui/using_map_key' --mod matrix patching UI utilities
 
 nb = include 'lib/eggs/lib/nb/lib/nb'                                --nb
 
